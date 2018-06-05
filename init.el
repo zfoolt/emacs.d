@@ -26,11 +26,11 @@
 (evil-mode t)
 
 (require 'key-chord)
-;; (setq key-chord-two-keys-delay 0.5)
-(key-chord-define evil-normal-state-map ",," 'evil-force-normal-state)
-(key-chord-define evil-visual-state-map ",," 'evil-change-to-previous-state)
-(key-chord-define evil-insert-state-map ",," 'evil-normal-state)
-(key-chord-define evil-replace-state-map ",," 'evil-normal-state)
+(setq key-chord-two-keys-delay 0.2)
+(key-chord-define evil-normal-state-map "jk" 'evil-force-normal-state)
+(key-chord-define evil-visual-state-map "jk" 'evil-change-to-previous-state)
+(key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
+(key-chord-define evil-replace-state-map "jk" 'evil-normal-state)
 (key-chord-mode t)
 
 (require 'highlight-chars)
